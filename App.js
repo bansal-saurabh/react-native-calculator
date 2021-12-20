@@ -39,14 +39,16 @@ export const Calculator = () => {
       <HStack space={2} alignItems="center" flex={10}>
         <TextArea
           flex={1}
+          h={300}
           placeholder="0"
           fontSize="xl"
+          showSoftInputOnFocus={false}
         >
           {parseFloat(this.state.currentValue).toLocaleString()}
         </TextArea>
       </HStack>
 
-      <Divider my="1" />
+      <Divider my="5" />
 
       <HStack space={2} alignItems="center" flex={2}>
         <IconButton
